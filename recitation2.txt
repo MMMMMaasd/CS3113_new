@@ -1,0 +1,28 @@
+1. D0 must = 1, D1 must = 0, D2 must be 0, D 3 must be 1
+
+2. 
+	(a). 11
+	(b). 0
+	(c). 9
+
+4. module recitation2a(A, B, X);
+   	input A, B;
+   	output X;
+    	assign X = ~((~((~(A | B)) | (A & B))) & (A | B))
+   endmodule
+
+
+5. module  majority(A, Y);
+    	input [2:0] A;
+    	output Y;
+    	assign Y = (A[0] & A[1]) | (A[0] & A[2]) | (A[2] & A[1]);
+   endmodule
+
+
+6. bool  queryLSB(unsigned  int x) {
+	return x & 1
+}
+
+7. unsigned  int  flipOnBit3(unsigned  int x) {
+	return x | 4;
+}
